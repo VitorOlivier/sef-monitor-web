@@ -9,7 +9,8 @@ export default function Agenda(props) {
       const parameter = Object.keys(filter)
         .map(key => key + '=' + filter[key])
         .join('&');
-      const response = await fetch('http://olivierlab.tplinkdns.com:8080/agendamento?' + parameter, {
+      const uri = process.env.REACT_APP_API_URL;
+      const response = await fetch(uri + '/agendamento?' + parameter, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
