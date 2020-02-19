@@ -1,13 +1,151 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: "#dfdfdf";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
 }
+
+.ContainerFlex {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  
+}
+
+.divLines {
+  display: flex;
+  margin-top: 1px;
+  flex-direction: row;
+  background-color: whitesmoke;
+}
+
+.divLineFlex{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.divData {
+  display: flex;
+  color:royalblue;
+  flex-direction: column;
+  line-height: 15px;
+  font-size: 15px;
+  text-align: center; 
+  font-weight: normal;
+  align-items: center;
+}
+
+.divDayMonthYear {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 10px;
+  margin-right: 5px;
+  position: sticky;
+  top:6px;
+  bottom: inherit;  
+}
+
+.divDayMonth {
+  display: flex;
+  color:rgb(190, 190, 190);
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.divWeekDayYear {
+  display: flex;
+  color:rgb(190, 190, 190);
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 10px;
+  border: 1px solid darkgreen;
+  padding: 2px;
+}
+
+.logo {
+  height: 32px;
+  width: 32px;
+}
+
+
+.divLineHoraLocal {
+  display: flex;
+  border: 1px solid green;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 5px;
+  margin-right: 10px;
+  background-color: green;
+}
+
+.divLineHoraLocal:nth-of-type(even) {
+  display: flex;
+  border: 1px solid limegreen;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 5px;
+  margin-right: 10px;
+  background-color: limegreen;
+}
+
+.pWeekDay {
+  line-height: 11px;
+  font-size: 10px;
+  text-align: center;
+  color: black;
+  font-weight: 500;  
+}
+
+.pDay {
+  line-height: 17px;
+  font-size: 17px;
+  text-align: center;
+  color: black;
+  font-weight: 500;  
+}
+
+.pMonth{
+  line-height: 17px;
+  font-size: 17px;
+  text-align: center;
+  color: black;
+  font-weight: 500;  
+}
+
+.pYear{
+  line-height: 11px;
+  font-size: 10px;
+  text-align: center;
+  color: black;
+  font-weight: 500;  
+}
+
+.divHora {  
+  margin: 2px;
+  padding: 2px;
+  width: max-content;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.divLocal {
+  margin: 2px;
+  padding: 2px;
+  text-align: left;
+  color: whitesmoke;
+  font-weight: 500; 
+}
+
+.divServiceSelected{
+  display: flex;
+  flex: 1;  
+}
+
